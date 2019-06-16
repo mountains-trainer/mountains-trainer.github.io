@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Йоргент Клинзман - твой проводник</title>
+        <meta charset="utf-8">
+        <link href="css/main.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/jquery.js"></script>
+        <script src="js/typed.min.js"></script>
+        <script src="js/particles.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/mfp.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--burger menu-->
+        <div class="m-burg">
+            <input type="checkbox" id="btn" class="m-checkbox">
+            <label class="m-btn" for="btn"></label>
+            <div class="m-menu" id="m-menu">
+                <a href="#about" class="m-menu__link">about</a>
+                <a href="#study" class="m-menu__link">routes</a>
+                <a href="#course" class="m-menu__link">galery</a>
+                <a href="#feedback" class="m-menu__link">contacts</a>
+            </div>
+        </div>
+        <!--end burger menu-->
+        <!--intro-->
+        <div class="intro">
+            <div class="container">
+                <div class="intro-content">
+                    <div class="quadro">
+                        <h1 class="quadro__title">mountain</h1>
+                        <p class="quadro__subtitle">personal trainer</p>
+                        <p class="quadro__subtitle typed"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-decor">
+                <span class="menu-decor-letter">m</span>
+                <span class="menu-decor-letter">e</span>
+                <span class="menu-decor-letter">n</span>
+                <span class="menu-decor-letter">u</span>
+            </div>
+        </div>
+        <!--about me-->
+        <div id="particles-js" class="about-particles">
+            <div class="about">
+                <div class="container"></div>
+                    <div class="title">About me</div>
+                    <div class="photo-box">
+                        <img src="imgs/master.png" alt="me" class="photo">
+                        <div class="under-shadow-first"></div>
+                        <div class="under-shadow-second"></div>
+                    </div>
+                    <h2 class="subtitle subtitle__about">The beginning of the way</h2>
+                    <div class="about-content">
+                        <p class="content-inner">
+                            The first trip is never forgotten, it is like a first date with a girl. You prepare for a long time, and then you either get everything or nothing. In my case, everything went at the best level, and I wanted more and more such meetings.
+                        </p>
+                        <p class="content-inner">                           
+                            I began to prepare: to gather information, to go on hiking trips, to look at lectures on medicine and travel. And now with pride I can say I am the best in my business.
+                        </p>
+                    </div>
+                    <div class="about-wrapper">
+                        <input type="checkbox" id="about-btn" class="about-checkbox">
+                        <label class="about-btn" for="about-btn">Подробнее</label>
+                        <div class="down-content">
+                            <p class="down-inner">
+                                Activities - guide instructor;<br>
+                                Specialization - hiking;<br>
+                                Personal Achievements - Climbing Mount Kilimanjaro
+                                </p>
+                            <p class="down-inner">
+                                Experience hikes - 15 years;<br>
+                                Guide instructor - 10 years;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mountains-decor"></div>
+        </div>
+        <!--routes-->
+        <div class="routes">
+            <div class="container">
+                <div class="title">routes</div>
+                <div class="routes-box">
+                    <div class="popup" id="popup-first">
+                        <div class="close" id="close"></div>
+                        <h1 class="popup-title">carpathians</h1>
+                        <div class="popup-box">
+                            <section class="popup-inner">
+                                <img src="imgs/Carpathians1.jpg" alt="carpathians" class="popup-img">
+                            </section>
+                            <section class="popup-inner">
+                                <p class="popup-text popup-text_padding-t">
+                                    The beginning of the ascent of the mountain begins at the base of the mountain, and continues until the end of the mountain. We make a halt on the road, all those who lag behind we do not wait for them, they are sent to be eaten by the wolves.
+                                    Additional services, spending the night with an intruder in a tent, my love will be enough for everyone.
+                                    </p>
+                                <p class="popup-text"> 
+                                    In the middle of our route, you can stay at the keeper Igor, warm up to buy up in the bathhouse and rub backs. Also for a fee you can eat well.
+                                </p>
+                                <div class="popup-table">
+                                    <img src="imgs/icons/road.png" alt="road" class="popup-table__img">
+                                    <p class="popup-text popup-table__text">
+                                            The route is worked out individually, there is a ready route.
+                                    </p>
+                                </div>
+                                <div class="popup-table">
+                                    <img src="imgs/icons/eat.png" alt="eat" class="popup-table__img">
+                                    <p class="popup-text popup-table__text">
+                                        Before going, you can consult with me about what to take with you from food.
+                                    </p>
+                                </div>
+                                <div class="popup-table">
+                                    <img src="imgs/icons/rucksack.png" alt="bag" class="popup-table__img">
+                                    <p class="popup-text popup-table__text">
+                                        Part or all of the equipment can be rented.
+                                    </p>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="price">
+                                cost 7 days:  200$
+                        </div>
+                    </div>
+                    <div class="popup" id="popup-second">
+                        <div class="close" id="close-second"></div>
+                        <h1 class="popup-title">crimea</h1>
+                        <div class="popup-box">
+                            <section class="popup-inner">
+                                <img src="imgs/crimean1.jpg" alt="carpathians" class="popup-img">
+                            </section>
+                            <section class="popup-inner">
+                                <p class="popup-text popup-text_padding-t">
+                                    The beginning of the ascent of the mountain begins at the base of the mountain, and continues until the end of the mountain. We make a halt on the road, all those who lag behind we do not wait for them, they are sent to be eaten by the wolves.
+                                    Additional services, spending the night with an intruder in a tent, my love will be enough for everyone.
+                                </p>
+                                <p class="popup-text"> 
+                                    In the middle of our route, you can stay at the keeper Igor, warm up to buy up in the bathhouse and rub backs. Also for a fee you can eat well.
+                                </p>
+                                <div class="popup-table">
+                                    <img src="imgs/icons/road.png" alt="road" class="popup-table__img">
+                                    <p class="popup-text popup-table__text">
+                                        The route is worked out individually, there is a ready route.
+                                    </p>
+                                </div>
+                                <div class="popup-table">
+                                    <img src="imgs/icons/eat.png" alt="eat" class="popup-table__img">
+                                    <p class="popup-text popup-table__text">
+                                        Before going, you can consult with me about what to take with you from food.
+                                    </p>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="price">
+                                cost 5 days:  170$
+                        </div>
+                    </div>
+                    <div class="popup" id="popup-third">
+                        <div class="close" id="close-third"></div>
+                        <h1 class="popup-title">plans</h1>
+                        <div class="popup-box">
+                            <section class="popup-inner">
+                                <img src="imgs/plan1.2.jpg.png" alt="carpathians" class="popup-img">
+                            </section>
+                            <section class="popup-inner">
+                                <p class="popup-text popup-text_padding-t">
+                                    The beginning of the ascent of the mountain begins at the base of the mountain, and continues until the end of the mountain. We make a halt on the road, all those who lag behind we do not wait for them, they are sent to be eaten by the wolves.
+                                    Additional services, spending the night with an intruder in a tent, my love will be enough for everyone.
+                                    </p>
+                                <p class="popup-text"> 
+                                    In the middle of our route, you can stay at the keeper Igor, warm up to buy up in the bathhouse and rub backs. Also for a fee you can eat well.
+                                </p>
+                                <div class="popup-table">
+                                    <img src="imgs/icons/road.png" alt="road" class="popup-table__img">
+                                    <p class="popup-text popup-table__text">
+                                        The route is worked out individually, there is a ready route.
+                                    </p>
+                                </div>
+                                <div class="popup-table">
+                                    <img src="imgs/icons/eat.png" alt="eat" class="popup-table__img">
+                                    <p class="popup-text popup-table__text">
+                                        Before going, you can consult with me about what to take with you from food.
+                                    </p>
+                                </div>
+                                <div class="popup-table">
+                                    <img src="imgs/icons/rucksack.png" alt="bag" class="popup-table__img">
+                                    <p class="popup-text popup-table__text">
+                                        Part or all of the equipment can be rented.
+                                    </p>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="price">
+                            cost 7 days:  200$
+                        </div>
+                    </div>
+                    <section class="routes-inner img1">
+                        <a href="#fake" id="link-first" class="routes-link ope1n-popup-link">
+                            <span class="link-letter letter1">c</span>
+                            <span class="link-letter letter2">a</span>
+                            <span class="link-letter letter3">r</span>
+                            <span class="link-letter letter4">p</span>
+                            <span class="link-letter letter5">a</span>
+                            <span class="link-letter letter6">t</span>
+                            <span class="link-letter letter7">h</span>
+                            <span class="link-letter letter8">i</span>
+                            <span class="link-letter letter9">a</span>
+                            <span class="link-letter letter10">n</span>
+                            <span class="link-letter letter11">s</span>
+                            <div class="shoot-line"></div>
+                        </a>
+                    </section>
+                    <section class="routes-inner img2">
+                        <a href="#fake" id="link-second" class="routes-link">
+                            <span class="link-letter letter1">c</span>
+                            <span class="link-letter letter2">r</span>
+                            <span class="link-letter letter3">i</span>
+                            <span class="link-letter letter4">m</span>
+                            <span class="link-letter letter5">e</span>
+                            <span class="link-letter letter6">a</span>
+                            <div class="shoot-line"></div>
+                        </a>
+                    </section>
+                    <section class="routes-inner img3">
+                        <a href="#fake" id="link-third" class="routes-link">
+                            <span class="link-letter letter1">p</span>
+                            <span class="link-letter letter2">l</span>
+                            <span class="link-letter letter3">a</span>
+                            <span class="link-letter letter4">n</span>
+                            <span class="link-letter letter5">s</span>
+                            <div class="shoot-line"></div>
+                        </a>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="seporator">
+            <p class="citate">
+                In complete darkness, the blind is the best conductor - he distinguishes between the road and the paths better sighted. However, it is truly foolish, when the day has already come, to still use the old blind men as guides.</p>
+            <p class="signature">Henry Welis</p>
+        </div>
+        <!--gallery-->
+        <div class="gallery">
+            <div class="container">
+                <h1 class="title title__gallery">gallery</h1>
+                <div class="gallery-box popup-gallery">
+                    <a href="imgs/galary1.jpg" class="gallery-link" title="picture1">
+                        <img src="imgs/galary1.jpg" alt="pic" class="gallery-img">
+                    </a>
+                    <a href="imgs/galary2.jpg" class="gallery-link" title="picture2">
+                        <img src="imgs/galary2.jpg" alt="pic" class="gallery-img">
+                    </a>
+                    <a href="imgs/galary3.jpg" class="gallery-link" title="picture3">
+                        <img src="imgs/galary3.jpg" alt="pic" class="gallery-img">
+                    </a>
+                    <a href="imgs/galary4.jpg" class="gallery-link" title="picture4">
+                        <img src="imgs/galary4.jpg" alt="pic" class="gallery-img">
+                    </a>
+                    <a href="imgs/galary5.jpeg" class="gallery-link" title="picture5">
+                        <img src="imgs/galary5.jpeg" alt="pic" class="gallery-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer"></div>
+            <div class="footer-box">
+                <div class="phone-box">
+                    <p class="footer-phone">+38(095)374-51-20</p>
+                    <p class="footer-phone">+38(063)514-21-12</p>
+                </div>
+                <div class="logo-box">
+                    <img src="imgs/LOGO.png" alt="logo" class="footer-logo">
+                </div>
+                <div class="socials-box">
+                    <a href="#1" class="socials-links insta"></a>
+                    <a href="#1" class="socials-links twitter"></a>
+                    <a href="#1" class="socials-links facebook"></a>
+                </div>
+            </div>
+        </footer>
+        <script>
+            var typed = new Typed(".typed", {
+                strings: [
+                    "Hello, my name is Yorgent Cleansman",
+                    "I am a personal trainer",
+                    "I help with personal and group hiking in the mountains"
+                ],
+                typeSpeed: 50,
+                backSpeed: 50,
+                loop: true,
+                showCursor: false,
+                smartBackspace: true // Default value
+            });
+        </script>
+        <script>
+            $('.open-popup-link').magnificPopup({
+                type:'inline',
+                midClick: true 
+            });
+        </script>
+        <script>
+            var link = document.getElementById('link-first');
+            link.addEventListener('click',function(){
+                var el = document.getElementById('popup-first');
+                el.classList.add('show');
+            });
+            var cls = document.getElementById('close');
+            cls.addEventListener('click',function(){
+                var el = document.getElementById('popup-first');
+                el.classList.remove('show');
+            });
+
+
+            var linkSecond = document.getElementById('link-second');
+            linkSecond.addEventListener('click',function(){
+                var el = document.getElementById('popup-second');
+                el.classList.add('show');
+            });
+            var clsSecond = document.getElementById('close-second');
+            clsSecond.addEventListener('click',function(){
+                var el = document.getElementById('popup-second');
+                el.classList.remove('show');
+            });
+
+
+            var linkThird = document.getElementById('link-third');
+            linkThird.addEventListener('click',function(){
+                var el = document.getElementById('popup-third');
+                el.classList.add('show');
+            });
+            var clsThird = document.getElementById('close-third');
+            clsThird.addEventListener('click',function(){
+                var el = document.getElementById('popup-third');
+                el.classList.remove('show');
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+	            $('.popup-gallery').magnificPopup({
+		            delegate: 'a',
+		            type: 'image',
+		            tLoading: 'Loading image #%curr%...',
+		            mainClass: 'mfp-img-mobile',
+		            gallery: {
+			            enabled: true,
+			            navigateByImgClick: true,
+			            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		            },
+		            image: {
+			            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+			            titleSrc: function(item) {
+				            return item.el.attr('title') + '<small>by Yorgent Cleansman</small>';
+			            }
+		            }
+	            });
+            });
+        </script>
+    </body>
+</html>
