@@ -1,9 +1,10 @@
 <!doctype html>
 <html>
     <head>
-        <title>Йоргент Клинзман - твой проводник</title>
+        <title>Yorgent Cleansman - your own lead</title>
         <meta charset="utf-8">
         <link href="css/main.css" rel="stylesheet">
+        <link rel="shortcut icon" href="/imgs/icons/favicon.ico" type="image/png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="js/jquery.js"></script>
         <script src="js/typed.min.js"></script>
@@ -19,14 +20,24 @@
             <label class="m-btn" for="btn"></label>
             <div class="m-menu" id="m-menu">
                 <a href="#about" class="m-menu__link">about</a>
-                <a href="#study" class="m-menu__link">routes</a>
-                <a href="#course" class="m-menu__link">galery</a>
-                <a href="#feedback" class="m-menu__link">contacts</a>
+                <a href="#routes" class="m-menu__link">routes</a>
+                <a href="#gallery" class="m-menu__link">gallery</a>
+                <a href="#contacts" class="m-menu__link">contacts</a>
             </div>
         </div>
-        <!--end burger menu-->
         <!--intro-->
         <div class="intro">
+        <!--burger menu for less 900px displays-->
+            <div class="sm-m-burg">
+                <input type="checkbox" id="sm-m-btn" class="sm-m-checkbox">
+                <label for="sm-m-btn" class="sm-m-btn"></label>
+                <div class="sm-m-menu" id="sm-m-menu">
+                    <a href="#about" class="sm-m-menu__link">about</a>
+                    <a href="#routes" class="sm-m-menu__link">routes</a>
+                    <a href="#gallery" class="sm-m-menu__link">gallery</a>
+                    <a href="#contacts" class="sm-m-menu__link">contacts</a>
+                </div>
+            </div>
             <div class="container">
                 <div class="intro-content">
                     <div class="quadro">
@@ -42,11 +53,13 @@
                 <span class="menu-decor-letter">n</span>
                 <span class="menu-decor-letter">u</span>
             </div>
+            <div class="link-anchor" id="about"></div>
         </div>
         <!--about me-->
-        <div id="particles-js" class="about-particles">
+        <div class="space">
+            <div id="particles-js" class="about-particles"></div>
             <div class="about">
-                <div class="container"></div>
+                <div class="container">
                     <div class="title">About me</div>
                     <div class="photo-box">
                         <img src="imgs/master.png" alt="me" class="photo">
@@ -70,7 +83,7 @@
                                 Activities - guide instructor;<br>
                                 Specialization - hiking;<br>
                                 Personal Achievements - Climbing Mount Kilimanjaro
-                                </p>
+                            </p>
                             <p class="down-inner">
                                 Experience hikes - 15 years;<br>
                                 Guide instructor - 10 years;
@@ -78,8 +91,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="mountains-decor"></div>
             </div>
-            <div class="mountains-decor"></div>
+            <div class="link-anchor" id="routes"></div>
         </div>
         <!--routes-->
         <div class="routes">
@@ -90,21 +104,21 @@
                         <div class="close" id="close"></div>
                         <h1 class="popup-title">carpathians</h1>
                         <div class="popup-box">
-                            <section class="popup-inner">
+                            <section class="popup-inner m-hide">
                                 <img src="imgs/Carpathians1.jpg" alt="carpathians" class="popup-img">
                             </section>
                             <section class="popup-inner">
                                 <p class="popup-text popup-text_padding-t">
                                     The beginning of the ascent of the mountain begins at the base of the mountain, and continues until the end of the mountain. We make a halt on the road, all those who lag behind we do not wait for them, they are sent to be eaten by the wolves.
                                     Additional services, spending the night with an intruder in a tent, my love will be enough for everyone.
-                                    </p>
+                                </p>
                                 <p class="popup-text"> 
                                     In the middle of our route, you can stay at the keeper Igor, warm up to buy up in the bathhouse and rub backs. Also for a fee you can eat well.
                                 </p>
                                 <div class="popup-table">
                                     <img src="imgs/icons/road.png" alt="road" class="popup-table__img">
                                     <p class="popup-text popup-table__text">
-                                            The route is worked out individually, there is a ready route.
+                                        The route is worked out individually, there is a ready route.
                                     </p>
                                 </div>
                                 <div class="popup-table">
@@ -129,7 +143,7 @@
                         <div class="close" id="close-second"></div>
                         <h1 class="popup-title">crimea</h1>
                         <div class="popup-box">
-                            <section class="popup-inner">
+                            <section class="popup-inner m-hide">
                                 <img src="imgs/crimean1.jpg" alt="carpathians" class="popup-img">
                             </section>
                             <section class="popup-inner">
@@ -162,7 +176,7 @@
                         <div class="close" id="close-third"></div>
                         <h1 class="popup-title">plans</h1>
                         <div class="popup-box">
-                            <section class="popup-inner">
+                            <section class="popup-inner m-hide">
                                 <img src="imgs/plan1.2.jpg.png" alt="carpathians" class="popup-img">
                             </section>
                             <section class="popup-inner">
@@ -198,7 +212,7 @@
                         </div>
                     </div>
                     <section class="routes-inner img1">
-                        <a href="#fake" id="link-first" class="routes-link ope1n-popup-link">
+                        <a href="#fake" id="link-first" class="routes-link open-popup-link">
                             <span class="link-letter letter1">c</span>
                             <span class="link-letter letter2">a</span>
                             <span class="link-letter letter3">r</span>
@@ -241,11 +255,12 @@
             <p class="citate">
                 In complete darkness, the blind is the best conductor - he distinguishes between the road and the paths better sighted. However, it is truly foolish, when the day has already come, to still use the old blind men as guides.</p>
             <p class="signature">Henry Welis</p>
+            <div class="link-anchor" id="gallery"></div>
         </div>
         <!--gallery-->
         <div class="gallery">
             <div class="container">
-                <h1 class="title title__gallery">gallery</h1>
+                <h1 class="title">gallery</h1>
                 <div class="gallery-box popup-gallery">
                     <a href="imgs/galary1.jpg" class="gallery-link" title="picture1">
                         <img src="imgs/galary1.jpg" alt="pic" class="gallery-img">
@@ -266,7 +281,7 @@
             </div>
         </div>
         <footer>
-            <div class="footer"></div>
+            <div class="footer" id="contacts"></div>
             <div class="footer-box">
                 <div class="phone-box">
                     <p class="footer-phone">+38(095)374-51-20</p>
@@ -281,7 +296,21 @@
                     <a href="#1" class="socials-links facebook"></a>
                 </div>
             </div>
-        </footer>
+        </footer>  
+        <script>
+            $(document).ready(function(){
+                 $("#sm-m-menu, #m-menu").on("click","a", function (event) {
+                    //отменяем стандартную обработку нажатия по ссыл
+                    event.preventDefault();
+                    //забираем идентификатор бока с атрибута href
+                    var id  = $(this).attr('href'),
+                    //узнаем высоту от начала страницы до блока на который ссылается якорь          
+                    top = $(id).offset().top;           
+                    //анимируем переход на расстояние - top за 1500 мс            
+                    $('body,html').animate({scrollTop: top}, 1000);            
+                });            
+            });
+        </script> 
         <script>
             var typed = new Typed(".typed", {
                 strings: [
@@ -289,17 +318,11 @@
                     "I am a personal trainer",
                     "I help with personal and group hiking in the mountains"
                 ],
-                typeSpeed: 50,
+                typeSpeed: 80,
                 backSpeed: 50,
                 loop: true,
                 showCursor: false,
                 smartBackspace: true // Default value
-            });
-        </script>
-        <script>
-            $('.open-popup-link').magnificPopup({
-                type:'inline',
-                midClick: true 
             });
         </script>
         <script>
@@ -339,6 +362,17 @@
             });
         </script>
         <script>
+            var myNav = $("#sm-m-menu");
+                $(window).on('scroll', function() {
+                    "use strict";
+                    if ($(window).scrollTop() >= 280) {
+                    myNav.addClass("nav-bg");
+                    } else {
+                    myNav.removeClass("nav-bg");
+                }
+            });
+        </script>
+        <script>
             $(document).ready(function() {
 	            $('.popup-gallery').magnificPopup({
 		            delegate: 'a',
@@ -361,3 +395,11 @@
         </script>
     </body>
 </html>
+
+
+
+
+
+
+
+   
