@@ -1331,7 +1331,7 @@ intro
     width: 30px;
     height: 30px; }
   .link-anchor {
-    height: 20px; } }
+    height: 12px; } }
 
 @media (min-width: 450px) and (max-width: 599px) {
   .sm-m-menu__link {
@@ -1565,7 +1565,7 @@ intro
   .footer-phone {
     text-align: center; }
   .link-anchor {
-    height: 20px; } }
+    height: 12px; } }
 
 @media (min-height: 600px) and (max-height: 800px) {
   .m-checkbox:checked ~ .m-menu {
