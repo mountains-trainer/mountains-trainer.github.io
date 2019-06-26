@@ -776,7 +776,7 @@ intro
 //
 //
 .link-anchor{
-    height:70px;
+    height:0;
     position:absolute;
     bottom:0;
 }
@@ -960,6 +960,9 @@ intro
     .facebook{
         width:30px;
         height:30px;
+    }
+    .link-anchor{
+        height:20px;
     }
 }
 
@@ -1194,6 +1197,9 @@ intro
     }
     .footer-phone{
         text-align:center;
+    }
+    .link-anchor{
+        height:20px;
     }
 }
 @media (min-height:600px) and (max-height:800px){
